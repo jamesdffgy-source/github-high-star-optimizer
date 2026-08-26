@@ -6,7 +6,7 @@
   <img src="docs/assets/github-high-star-optimizer-readme-hero.png" alt="GitHub-High-Star-Optimizer-Ablauf: Audit, Prepare, Apply und Publish, ohne Codeänderungen." />
 </p>
 
-> Ein Codex Skill, der ein reales, bestehendes GitHub-Projekt in ein klareres, glaubwürdiges und veröffentlichungsbereites Repository verwandelt, ohne Produktcode zu ändern.
+> Ein portabler Skill nach dem offenen Agent Skills-Standard für Codex, Claude Code und kompatible Hosts. Er verwandelt ein reales, bestehendes GitHub-Projekt in ein klareres, glaubwürdiges und veröffentlichungsbereites Repository, ohne Produktcode zu ändern.
 
 GitHub High-Star Optimizer verbessert ausschließlich die öffentliche Veröffentlichungsoberfläche: Positionierung, README-Struktur, belegbare Visuals, Repository-Metadaten, Release Notes, lokalisierte Einführungen und ethische Launch-Materialien. Er verspricht keine Stars und manipuliert kein Engagement.
 
@@ -14,6 +14,7 @@ GitHub High-Star Optimizer verbessert ausschließlich die öffentliche Veröffen
 
 ## Was optimiert wird
 
+- **Name und Auffindbarkeit:** bewertet Aufgabenbegriffe, aktuelle GitHub-Suchstichproben, Namenskollisionen, Metadatenabgleich und Umbenennungskosten.
 - **Klarheit:** Zielgruppe, Problem, Ergebnis, Unterscheidungsmerkmal und nächster Schritt.
 - **Vertrauen:** Aussagen mit Repository-Belegen, klare Einschränkungen und echte Ergebnisse.
 - **Präsentation:** README Hero, Social Preview, Release-Grafik, Badges und Informationshierarchie.
@@ -32,8 +33,8 @@ GitHub High-Star Optimizer verbessert ausschließlich die öffentliche Veröffen
 ## Schnellstart
 
 1. Klonen Sie dieses Repository.
-2. Kopieren Sie das innere Verzeichnis [`github-high-star-optimizer`](github-high-star-optimizer) in das für Codex konfigurierte Skills-Verzeichnis.
-3. Rufen Sie den Skill mit einem realen Repository oder Workspace auf.
+2. Folgen Sie der [Installationsanleitung](docs/INSTALLATION.md), um das innere Verzeichnis [`github-high-star-optimizer`](github-high-star-optimizer) in Codex, Claude Code oder einem kompatiblen Agent-Skills-Host zu installieren.
+3. Verwenden Sie die Aufrufsyntax des Hosts und geben Sie ein reales Repository oder einen Workspace an.
 
 ```text
 Use $github-high-star-optimizer to audit this existing repository.

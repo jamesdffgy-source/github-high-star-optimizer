@@ -6,7 +6,7 @@
   <img src="docs/assets/github-high-star-optimizer-readme-hero.png" alt="Flux GitHub High-Star Optimizer : Audit, Prepare, Apply et Publish, sans modifier le code." />
 </p>
 
-> Un Skill pour Codex qui transforme un projet GitHub réel et existant en dépôt plus clair, crédible et prêt à publier, sans modifier le code du produit.
+> Un Skill portable fondé sur le standard Agent Skills pour Codex, Claude Code et les hôtes compatibles. Il transforme un projet GitHub réel et existant en dépôt plus clair, crédible et prêt à publier, sans modifier le code du produit.
 
 GitHub High-Star Optimizer améliore uniquement la couche publique et éditoriale : positionnement, structure du README, visuels fondés sur des preuves, métadonnées, Release Notes, présentations localisées et supports de lancement éthiques. Il ne promet aucun nombre de Stars et ne manipule pas l’engagement.
 
@@ -14,6 +14,7 @@ GitHub High-Star Optimizer améliore uniquement la couche publique et éditorial
 
 ## Ce qui est optimisé
 
+- **Nom et recherche :** adéquation aux termes de la tâche, échantillons actuels de recherche GitHub, collisions, cohérence des métadonnées et coût du renommage.
 - **Clarté :** public, problème, résultat, différence et prochaine action.
 - **Confiance :** affirmations reliées aux preuves du dépôt, limites explicites et résultats réels.
 - **Présentation :** README Hero, Social Preview, visuel de Release, badges et hiérarchie.
@@ -32,8 +33,8 @@ GitHub High-Star Optimizer améliore uniquement la couche publique et éditorial
 ## Démarrage rapide
 
 1. Clonez ce dépôt.
-2. Copiez le dossier interne [`github-high-star-optimizer`](github-high-star-optimizer) dans le dossier Skills configuré pour Codex.
-3. Appelez le Skill en indiquant un dépôt ou espace de travail réel.
+2. Suivez le [guide d’installation](docs/INSTALLATION.md) pour installer le dossier interne [`github-high-star-optimizer`](github-high-star-optimizer) dans Codex, Claude Code ou un autre hôte compatible avec Agent Skills.
+3. Utilisez la syntaxe d’invocation de l’hôte et indiquez un dépôt ou espace de travail réel.
 
 ```text
 Use $github-high-star-optimizer to audit this existing repository.

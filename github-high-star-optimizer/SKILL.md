@@ -1,6 +1,7 @@
 ---
 name: github-high-star-optimizer
-description: Audit and optimize an existing GitHub repository's public presentation and release package for organic star growth—positioning, README, evidence-safe generated visuals, repository metadata, release notes, community documents, and launch copy—without changing source code, dependencies, builds, tests, CI, or runtime behavior. Use when a user asks to make a repository star-ready, improve its GitHub presentation, generate repository launch images, or prepare/relaunch an existing project.
+description: Audit and optimize an existing GitHub repository's publishing surface for organic discovery—naming and search positioning, README, evidence-safe visuals, metadata, releases, localization, and launch copy—without changing code or manipulating Stars. Use when reviewing or preparing a repository for launch or relaunch, evaluating its name, generating honest GitHub visuals, or publishing explicitly approved presentation changes.
+license: MIT
 ---
 
 # GitHub High-Star Optimizer
@@ -37,6 +38,12 @@ Do not select or replace a software license, invent a security contact, add a fu
 - Star count is an attention signal, not proof of adoption or quality. Pair it with honest usage and community metrics.
 - Do not promise a Star count, GitHub Trending placement, Product Hunt rank, or launch outcome.
 - Do not post, send messages, change live repository settings, publish a release, or edit the target repository unless the user authorized that mutation. Preparing local drafts is not authorization to publish them.
+
+## Host portability
+
+Keep the core workflow portable across hosts that implement the Agent Skills standard. Do not assume one invocation syntax, browser, CLI, image model, or GitHub connector. Use capabilities available in the current host and preserve the same authorization boundary everywhere.
+
+For Codex, Claude Code, other Agent Skills hosts, installation copy, or compatibility claims, read [references/cross-agent-compatibility.md](references/cross-agent-compatibility.md) completely. Treat `agents/openai.yaml` as optional OpenAI UI metadata; the core workflow must not depend on it.
 
 ## Select the operating mode
 
@@ -85,6 +92,18 @@ Use priorities:
 
 Do not start broad distribution while P0 items remain.
 
+### 3a. Evaluate repository naming and search fit
+
+When the user asks about the repository name, discoverability, keywords, or a rename, read [references/naming-and-discoverability.md](references/naming-and-discoverability.md) completely and use [assets/NAMING_AUDIT.template.md](assets/NAMING_AUDIT.template.md) when a reusable report is requested.
+
+- separate the functional category from an aspirational outcome or prestige claim;
+- verify GitHub’s current searchable fields and sample live queries for category, task, ecosystem, and exact-name collision;
+- compare the current name with descriptive, scope-led, brand-plus-descriptor, and keep-current options;
+- score user-intent fit, natural wording, truthful scope, search-field coverage, distinctiveness, cross-host portability, and rename cost;
+- treat rankings as dated observations and never promise Stars or search position;
+- recommend a rename only for a material clarity, collision, trust, spelling, or repositioning problem;
+- never rename automatically—show the migration map and obtain explicit authorization immediately before the live change.
+
 ### 4. Create the publishing package
 
 Read only the references relevant to the requested outputs:
@@ -92,7 +111,9 @@ Read only the references relevant to the requested outputs:
 - For README, screenshots, badges, Social Preview, or bilingual structure, read [references/readme-and-visuals.md](references/readme-and-visuals.md).
 - For visual direction, image generation, screenshot treatment, or style selection, read [references/visual-style-library.md](references/visual-style-library.md) completely. Use [assets/IMAGE_GENERATION_BRIEF.template.md](assets/IMAGE_GENERATION_BRIEF.template.md) for each generated asset.
 - For repository metadata, community surface, release notes, relaunch sequencing, or channel copy, read [references/release-and-distribution.md](references/release-and-distribution.md).
+- For repository naming, GitHub search sampling, candidate comparison, or rename planning, read [references/naming-and-discoverability.md](references/naming-and-discoverability.md) completely.
 - For localized README introductions, language navigation, multilingual release notes, or broad language coverage, read [references/multilingual-publishing.md](references/multilingual-publishing.md) completely.
+- For Codex, Claude Code, Agent Skills portability, or installation instructions, read [references/cross-agent-compatibility.md](references/cross-agent-compatibility.md) completely.
 - For platform rules, research claims, fake-Star boundaries, and source quality, read [references/evidence-and-policies.md](references/evidence-and-policies.md).
 
 Use the matching files in `assets/` as output scaffolds; replace every placeholder or leave it visibly marked for user completion. Do not copy an asset into the target repository if the user requested only an audit or preview.
@@ -100,6 +121,7 @@ Use the matching files in `assets/` as output scaffolds; replace every placehold
 A full Prepare result normally contains:
 
 - current-state audit and prioritized gap list;
+- current-name assessment, dated search sample, and rename recommendation when naming is in scope;
 - three evidence-safe positioning options with one recommended option;
 - repository About description, homepage recommendation, and 8–15 relevant Topic suggestions;
 - README rewrite or section-level patch plan;
@@ -168,7 +190,9 @@ Verify, as applicable:
 - every material claim is supported or qualified;
 - comparisons name the date/version and admit where alternatives fit better;
 - all links resolve and language-switch links are symmetric;
+- the repository name, About description, Topics, Skill folder, frontmatter name, and invocation examples remain aligned;
 - localized introductions preserve canonical claims, commands, limitations, versions, and license identity;
+- cross-agent claims distinguish tested support from format compatibility and use current host paths;
 - release copy separates shipped features from roadmap items;
 - community and security contact placeholders are not presented as live policy;
 - channel drafts obey current platform/community rules;
@@ -181,7 +205,9 @@ Lead with the resulting publishing improvement, not the process. Report:
 - files or drafts created/changed;
 - the top three conversion improvements;
 - unresolved facts/placeholders and why they matter;
+- naming recommendation, search-sample date, and rename migration consequences when relevant;
 - canonical language, published locales, and human-review status for multilingual output;
+- tested hosts, documented hosts, and unverified compatibility claims;
 - actions the user must perform in GitHub Settings or external platforms;
 - the next measurement checkpoint;
 - an explicit confirmation that source code and runtime behavior were not changed.

@@ -6,7 +6,7 @@
   <img src="docs/assets/github-high-star-optimizer-readme-hero.png" alt="Flusso di GitHub High-Star Optimizer: Audit, Prepare, Apply e Publish, senza modificare il codice." />
 </p>
 
-> Uno Skill per Codex che trasforma un progetto GitHub reale ed esistente in un repository più chiaro, credibile e pronto alla pubblicazione, senza modificare il codice del prodotto.
+> Uno Skill portabile basato sullo standard Agent Skills per Codex, Claude Code e host compatibili. Trasforma un progetto GitHub reale ed esistente in un repository più chiaro, credibile e pronto alla pubblicazione, senza modificare il codice del prodotto.
 
 GitHub High-Star Optimizer migliora esclusivamente il livello pubblico e di rilascio: posizionamento, struttura del README, elementi visivi basati su prove, metadati, Release Notes, introduzioni localizzate e materiali di lancio etici. Non promette Stars e non manipola il coinvolgimento.
 
@@ -14,6 +14,7 @@ GitHub High-Star Optimizer migliora esclusivamente il livello pubblico e di rila
 
 ## Cosa ottimizza
 
+- **Nome e ricerca:** valuta aderenza ai termini dell’attività, campioni attuali di ricerca GitHub, collisioni, coerenza dei metadati e costo della rinomina.
 - **Chiarezza:** pubblico, problema, risultato, differenza e prossima azione.
 - **Fiducia:** affermazioni collegate a prove del repository, limiti espliciti e risultati reali.
 - **Presentazione:** README Hero, Social Preview, immagine di Release, badge e gerarchia.
@@ -32,8 +33,8 @@ GitHub High-Star Optimizer migliora esclusivamente il livello pubblico e di rila
 ## Avvio rapido
 
 1. Clona questo repository.
-2. Copia la directory interna [`github-high-star-optimizer`](github-high-star-optimizer) nella directory Skills configurata per Codex.
-3. Richiama lo Skill indicando un repository o workspace reale.
+2. Segui la [guida di installazione](docs/INSTALLATION.md) per installare la directory interna [`github-high-star-optimizer`](github-high-star-optimizer) in Codex, Claude Code o un host compatibile con Agent Skills.
+3. Usa la sintassi di invocazione dell’host e indica un repository o workspace reale.
 
 ```text
 Use $github-high-star-optimizer to audit this existing repository.

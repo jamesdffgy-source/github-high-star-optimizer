@@ -9,15 +9,16 @@
   />
 </p>
 
-> A Codex Skill for turning an existing GitHub project into a clearer, credible, launch-ready repository—without changing product code.
+> A portable Agent Skill for turning an existing GitHub project into a clearer, credible, launch-ready repository—without changing product code. Structured for Codex, Claude Code, and other Agent Skills-compatible hosts.
 
 [![Release](https://img.shields.io/github/v/release/jamesdffgy-source/github-high-star-optimizer)](https://github.com/jamesdffgy-source/github-high-star-optimizer/releases)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-GitHub High-Star Optimizer improves the publishing surface of a real, existing project: positioning, README structure, evidence-safe visuals, repository metadata, release notes, localized introductions, and ethical launch materials. It does not promise Stars or manipulate engagement.
+GitHub High-Star Optimizer improves the publishing surface of a real, existing project: repository naming and search positioning, README structure, evidence-safe visuals, metadata, release notes, localized introductions, and ethical launch materials. It does not promise Stars or manipulate engagement.
 
 ## What it optimizes
 
+- **Naming and discovery:** evaluates task-language fit, current GitHub search samples, collision risk, metadata alignment, and rename cost.
 - **Clarity:** audience, problem, outcome, differentiator, and one obvious next action.
 - **Trust:** claims linked to repository evidence, explicit limitations, and real screenshots or output.
 - **Presentation:** README Hero, Social Preview, release artwork, badges, and information hierarchy.
@@ -35,14 +36,32 @@ GitHub High-Star Optimizer improves the publishing surface of a real, existing p
 
 ## Quick start
 
-1. Clone this repository.
-2. Copy the inner [`github-high-star-optimizer`](github-high-star-optimizer) directory into the skills directory configured for your Codex environment.
-3. Invoke the Skill with a real repository or local workspace in scope.
+### Codex
+
+Ask the built-in installer:
+
+```text
+Use $skill-installer to install the skill from
+https://github.com/jamesdffgy-source/github-high-star-optimizer/tree/main/github-high-star-optimizer
+```
+
+Then invoke it:
 
 ```text
 Use $github-high-star-optimizer to audit this existing repository.
 Only optimize its public presentation and release package; do not change code.
 ```
+
+### Claude Code
+
+Copy the inner [`github-high-star-optimizer`](github-high-star-optimizer) directory to `~/.claude/skills/github-high-star-optimizer` for personal use or `.claude/skills/github-high-star-optimizer` for project use. Then invoke:
+
+```text
+/github-high-star-optimizer Audit this existing repository.
+Only optimize its public presentation and release package; do not change code.
+```
+
+See the complete [installation and verification guide](docs/INSTALLATION.md) for Codex, Claude Code, Windows, macOS/Linux, project-scoped setup, and other Agent Skills-compatible hosts.
 
 Prepare a complete publishing package without touching the target repository:
 
@@ -61,6 +80,20 @@ Simplified Chinese README. Keep commands, version numbers, claims, and
 limitations consistent across both languages. Do not modify project code.
 ```
 
+Evaluate whether a repository name is searchable and trustworthy:
+
+```text
+Use $github-high-star-optimizer in Audit mode to evaluate this repository name.
+Sample current GitHub search queries, compare keep/rename candidates, and include
+rename consequences. Do not rename the live repository.
+```
+
+## Cross-agent compatibility
+
+The canonical package follows the [Agent Skills specification](https://agentskills.io/specification). Codex and Claude Code use the same `SKILL.md`, references, and assets; only discovery paths and explicit invocation syntax differ. `agents/openai.yaml` supplies optional OpenAI UI metadata and is not required by the core workflow.
+
+Compatibility with an Agent Skills format does not imply that every host provides GitHub access, image generation, browser control, or publishing permissions. The Skill falls back to a local audit or launch package when live capabilities are unavailable.
+
 ## Evidence and visual rules
 
 Every material claim must come from repository files, releases, demos, issues, user-provided facts, or a clearly labeled inference. Generated visuals may provide brand framing or explanation, but they must not fabricate a product interface, command output, benchmark, integration, customer, feature, or popularity metric.
@@ -78,8 +111,9 @@ The current locale set and human-review status are recorded in [`docs/LOCALIZATI
 ## Repository structure
 
 - [`github-high-star-optimizer/SKILL.md`](github-high-star-optimizer/SKILL.md) — operating modes, boundaries, workflow, and handoff rules.
-- [`github-high-star-optimizer/references`](github-high-star-optimizer/references) — publishing rubric, README and visual guidance, multilingual publishing, releases, evidence, and policy research.
-- [`github-high-star-optimizer/assets`](github-high-star-optimizer/assets) — reusable audit, README, release, launch-kit, Social Preview, and image-generation templates.
+- [`github-high-star-optimizer/references`](github-high-star-optimizer/references) — publishing rubric, repository naming and search, cross-agent compatibility, README and visual guidance, multilingual publishing, releases, evidence, and policy research.
+- [`github-high-star-optimizer/assets`](github-high-star-optimizer/assets) — reusable audit, naming audit, README, release, launch-kit, Social Preview, and image-generation templates.
+- [`docs/INSTALLATION.md`](docs/INSTALLATION.md) — Codex, Claude Code, and portable Agent Skills installation and verification.
 - [`docs/assets`](docs/assets) — final README, Social Preview, and release artwork.
 
 ## Non-goals

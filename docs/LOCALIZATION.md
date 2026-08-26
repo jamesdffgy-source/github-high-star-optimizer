@@ -3,7 +3,7 @@
 - Canonical document: [`README.md`](../README.md)
 - Canonical language: English
 - Published locale set: 15 languages
-- Last synchronized: 2026-08-26
+- Last synchronized: 2026-08-27
 - Review status: generated translations; not yet reviewed by fluent human reviewers
 
 ## Published locales

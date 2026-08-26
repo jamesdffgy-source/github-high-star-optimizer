@@ -6,7 +6,7 @@
   <img src="docs/assets/github-high-star-optimizer-readme-hero.png" alt="コードを変更せずに Audit、Prepare、Apply、Publish を行う GitHub High-Star Optimizer のワークフロー。" />
 </p>
 
-> 既存の GitHub プロジェクトを、製品コードを変更せずに、明確で信頼できる公開準備済みのリポジトリへ整える Codex Skill です。
+> Agent Skills 標準に準拠し、Codex、Claude Code、互換ホストで利用できるポータブル Skill です。既存の GitHub プロジェクトを、製品コードを変更せずに明確で信頼できる公開準備済みのリポジトリへ整えます。
 
 GitHub High-Star Optimizer が改善するのは実在するプロジェクトの公開面だけです。ポジショニング、README 構成、根拠に基づくビジュアル、リポジトリのメタデータ、Release Notes、多言語紹介、倫理的な公開資料を扱います。Star 数を約束したり、エンゲージメントを操作したりしません。
 
@@ -14,6 +14,7 @@ GitHub High-Star Optimizer が改善するのは実在するプロジェクト�
 
 ## 改善対象
 
+- **名前と検索性：** タスク語との適合、現在の GitHub 検索サンプル、名前の衝突、メタデータ整合性、改名コストを評価します。
 - **明確さ：** 対象者、課題、結果、差別化要因、次の行動を明示します。
 - **信頼性：** 重要な主張をリポジトリの根拠に結び付け、制限と実際の出力を示します。
 - **見せ方：** README Hero、Social Preview、Release 画像、バッジ、情報設計を整えます。
@@ -32,8 +33,8 @@ GitHub High-Star Optimizer が改善するのは実在するプロジェクト�
 ## クイックスタート
 
 1. このリポジトリをクローンします。
-2. 内側の [`github-high-star-optimizer`](github-high-star-optimizer) ディレクトリを、Codex 環境で設定された Skills ディレクトリへコピーします。
-3. 実在するリポジトリまたはワークスペースを指定して Skill を呼び出します。
+2. [インストールガイド](docs/INSTALLATION.md)に従い、内側の [`github-high-star-optimizer`](github-high-star-optimizer) ディレクトリを Codex、Claude Code、または互換 Agent Skills ホストへインストールします。
+3. 各ホストの呼び出し構文で、実在するリポジトリまたはワークスペースを指定します。
 
 ```text
 Use $github-high-star-optimizer to audit this existing repository.

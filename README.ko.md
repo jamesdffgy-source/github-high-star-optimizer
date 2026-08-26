@@ -6,7 +6,7 @@
   <img src="docs/assets/github-high-star-optimizer-readme-hero.png" alt="코드를 변경하지 않고 Audit, Prepare, Apply, Publish를 수행하는 GitHub High-Star Optimizer 워크플로." />
 </p>
 
-> 기존 GitHub 프로젝트를 제품 코드 변경 없이 더 명확하고 신뢰할 수 있으며 출시 준비가 된 저장소로 정리하는 Codex Skill입니다.
+> Agent Skills 표준을 따르며 Codex, Claude Code 및 호환 호스트에서 사용할 수 있는 이식 가능한 Skill입니다. 기존 GitHub 프로젝트를 제품 코드 변경 없이 더 명확하고 신뢰할 수 있으며 출시 준비가 된 저장소로 정리합니다.
 
 GitHub High-Star Optimizer는 실제 프로젝트의 공개·배포 영역만 개선합니다. 포지셔닝, README 구조, 근거 기반 시각 자료, 저장소 메타데이터, Release Notes, 다국어 소개와 윤리적인 출시 자료를 다룹니다. Star 수를 보장하거나 참여를 조작하지 않습니다.
 
@@ -14,6 +14,7 @@ GitHub High-Star Optimizer는 실제 프로젝트의 공개·배포 영역만 �
 
 ## 최적화 대상
 
+- **이름과 검색성:** 작업 용어 적합성, 현재 GitHub 검색 표본, 이름 충돌, 메타데이터 정렬 및 이름 변경 비용을 평가합니다.
 - **명확성:** 대상 사용자, 문제, 결과, 차별점과 다음 행동을 분명히 합니다.
 - **신뢰:** 주요 주장에 저장소 근거를 연결하고 제한과 실제 결과를 공개합니다.
 - **표현:** README Hero, Social Preview, Release 이미지, 배지와 정보 구조를 정리합니다.
@@ -32,8 +33,8 @@ GitHub High-Star Optimizer는 실제 프로젝트의 공개·배포 영역만 �
 ## 빠른 시작
 
 1. 이 저장소를 복제합니다.
-2. 내부 [`github-high-star-optimizer`](github-high-star-optimizer) 디렉터리를 Codex 환경에 설정된 Skills 디렉터리로 복사합니다.
-3. 실제 저장소나 워크스페이스를 지정해 Skill을 호출합니다.
+2. [설치 가이드](docs/INSTALLATION.md)에 따라 내부 [`github-high-star-optimizer`](github-high-star-optimizer) 디렉터리를 Codex, Claude Code 또는 호환 Agent Skills 호스트에 설치합니다.
+3. 해당 호스트의 호출 구문으로 실제 저장소나 워크스페이스를 지정합니다.
 
 ```text
 Use $github-high-star-optimizer to audit this existing repository.

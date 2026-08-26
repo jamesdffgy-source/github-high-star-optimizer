@@ -6,7 +6,7 @@
   <img src="docs/assets/github-high-star-optimizer-readme-hero.png" alt="Kodu değiştirmeden Audit, Prepare, Apply ve Publish adımlarını izleyen GitHub High-Star Optimizer iş akışı." />
 </p>
 
-> Gerçek ve mevcut bir GitHub projesini ürün kodunu değiştirmeden daha açık, güvenilir ve yayına hazır bir depoya dönüştüren Codex Skill’i.
+> Agent Skills standardını izleyen; Codex, Claude Code ve uyumlu ana bilgisayarlarda çalışan taşınabilir bir Skill. Gerçek ve mevcut bir GitHub projesini ürün kodunu değiştirmeden daha açık, güvenilir ve yayına hazır bir depoya dönüştürür.
 
 GitHub High-Star Optimizer yalnızca herkese açık sunum ve yayın katmanını iyileştirir: konumlandırma, README yapısı, kanıta dayalı görseller, depo meta verileri, Release Notes, yerelleştirilmiş tanıtımlar ve etik lansman materyalleri. Star sayısı vaat etmez ve etkileşimi manipüle etmez.
 
@@ -14,6 +14,7 @@ GitHub High-Star Optimizer yalnızca herkese açık sunum ve yayın katmanını 
 
 ## Neleri iyileştirir
 
+- **Ad ve arama:** görev terimi uyumu, güncel GitHub arama örnekleri, ad çakışmaları, meta veri hizalaması ve yeniden adlandırma maliyetini değerlendirir.
 - **Açıklık:** hedef kitle, sorun, sonuç, fark ve sonraki eylem.
 - **Güven:** depo kanıtlarına bağlı iddialar, açık sınırlamalar ve gerçek sonuçlar.
 - **Sunum:** README Hero, Social Preview, Release görseli, rozetler ve bilgi hiyerarşisi.
@@ -32,8 +33,8 @@ GitHub High-Star Optimizer yalnızca herkese açık sunum ve yayın katmanını 
 ## Hızlı başlangıç
 
 1. Bu depoyu klonlayın.
-2. İçteki [`github-high-star-optimizer`](github-high-star-optimizer) dizinini Codex ortamınız için yapılandırılmış Skills dizinine kopyalayın.
-3. Gerçek bir depo veya çalışma alanı belirterek Skill’i çağırın.
+2. [Kurulum kılavuzunu](docs/INSTALLATION.md) izleyerek içteki [`github-high-star-optimizer`](github-high-star-optimizer) dizinini Codex, Claude Code veya uyumlu bir Agent Skills ana bilgisayarına kurun.
+3. Ana bilgisayarın çağırma sözdizimini kullanarak gerçek bir depo veya çalışma alanı belirtin.
 
 ```text
 Use $github-high-star-optimizer to audit this existing repository.

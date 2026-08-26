@@ -6,7 +6,7 @@
   <img src="docs/assets/github-high-star-optimizer-readme-hero.png" alt="GitHub 高星發布優化器的稽核、準備、套用與發布流程，全程不修改專案程式碼。" />
 </p>
 
-> 一個面向 Codex 的 Skill：把真實、既有的 GitHub 專案整理成更清楚、可信且可發布的儲存庫，同時不修改產品程式碼。
+> 一個遵循 Agent Skills 標準的可攜式 Skill：適用於 Codex、Claude Code 與相容宿主，把真實、既有的 GitHub 專案整理成更清楚、可信且可發布的儲存庫，同時不修改產品程式碼。
 
 GitHub 高星發布優化器只改善真實專案的公開發布層：定位、README 結構、以證據為基礎的視覺素材、儲存庫中繼資料、Release Notes、多語言介紹與合規發布材料。它不承諾 Star 數量，也不操縱互動。
 
@@ -14,6 +14,7 @@ GitHub 高星發布優化器只改善真實專案的公開發布層：定位、R
 
 ## 優化內容
 
+- **命名與搜尋：** 評估任務詞匹配、目前 GitHub 搜尋樣本、名稱衝突、後設資料一致性與改名成本。
 - **清楚：** 說明受眾、問題、結果、差異點與主要下一步。
 - **可信：** 重要敘述連結到儲存庫證據，並揭示限制與真實輸出。
 - **展示：** README Hero、Social Preview、Release 圖片、徽章與資訊層級。
@@ -32,8 +33,8 @@ GitHub 高星發布優化器只改善真實專案的公開發布層：定位、R
 ## 快速開始
 
 1. 複製此儲存庫。
-2. 將內層 [`github-high-star-optimizer`](github-high-star-optimizer) 目錄複製到 Codex 環境設定的 Skills 目錄。
-3. 指定真實儲存庫或工作區後呼叫 Skill。
+2. 依照[安裝指南](docs/INSTALLATION.md)，將內層 [`github-high-star-optimizer`](github-high-star-optimizer) 目錄安裝到 Codex、Claude Code 或相容的 Agent Skills 宿主。
+3. 使用對應宿主的呼叫語法並指定真實儲存庫或工作區。
 
 ```text
 使用 $github-high-star-optimizer 稽核這個既有儲存庫。

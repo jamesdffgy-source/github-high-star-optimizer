@@ -6,7 +6,7 @@
   <img src="docs/assets/github-high-star-optimizer-readme-hero.png" alt="Alur GitHub High-Star Optimizer: Audit, Prepare, Apply, dan Publish tanpa mengubah kode." />
 </p>
 
-> Skill untuk Codex yang mengubah proyek GitHub nyata dan sudah ada menjadi repositori yang lebih jelas, tepercaya, dan siap diterbitkan tanpa mengubah kode produk.
+> Skill portabel berbasis standar Agent Skills untuk Codex, Claude Code, dan host yang kompatibel. Skill ini mengubah proyek GitHub nyata dan sudah ada menjadi repositori yang lebih jelas, tepercaya, dan siap diterbitkan tanpa mengubah kode produk.
 
 GitHub High-Star Optimizer hanya memperbaiki lapisan presentasi dan publikasi: penentuan posisi, struktur README, visual berbasis bukti, metadata repositori, Release Notes, pengantar terlokalisasi, dan materi peluncuran yang etis. Skill ini tidak menjanjikan jumlah Stars atau memanipulasi keterlibatan.
 
@@ -14,6 +14,7 @@ GitHub High-Star Optimizer hanya memperbaiki lapisan presentasi dan publikasi: p
 
 ## Yang dioptimalkan
 
+- **Nama dan pencarian:** menilai kecocokan istilah tugas, sampel pencarian GitHub saat ini, benturan nama, keselarasan metadata, dan biaya penggantian nama.
 - **Kejelasan:** audiens, masalah, hasil, pembeda, dan tindakan berikutnya.
 - **Kepercayaan:** klaim yang terhubung ke bukti repositori, batasan jelas, dan hasil nyata.
 - **Presentasi:** README Hero, Social Preview, gambar Release, badge, dan hierarki informasi.
@@ -32,8 +33,8 @@ GitHub High-Star Optimizer hanya memperbaiki lapisan presentasi dan publikasi: p
 ## Mulai cepat
 
 1. Kloning repositori ini.
-2. Salin direktori dalam [`github-high-star-optimizer`](github-high-star-optimizer) ke direktori Skills yang dikonfigurasi untuk Codex.
-3. Panggil Skill dengan repositori atau workspace nyata sebagai cakupan.
+2. Ikuti [panduan instalasi](docs/INSTALLATION.md) untuk memasang direktori dalam [`github-high-star-optimizer`](github-high-star-optimizer) ke Codex, Claude Code, atau host Agent Skills yang kompatibel.
+3. Gunakan sintaks pemanggilan host dan tentukan repositori atau workspace nyata.
 
 ```text
 Use $github-high-star-optimizer to audit this existing repository.

@@ -6,7 +6,7 @@
   <img src="docs/assets/github-high-star-optimizer-readme-hero.png" alt="GitHub 高星发布优化器的审计、准备、应用和发布工作流，全程不修改项目代码。" />
 </p>
 
-> 一个面向 Codex 的 Skill：把真实、已有的 GitHub 项目整理成更清晰、可信、可发布的仓库，同时不修改产品代码。
+> 一个遵循 Agent Skills 标准的可移植 Skill：适用于 Codex、Claude Code 和兼容宿主，把真实、已有的 GitHub 项目整理成更清晰、可信、可发布的仓库，同时不修改产品代码。
 
 GitHub 高星发布优化器只优化真实项目的公开发布层：定位、README 结构、基于证据的视觉素材、仓库元数据、Release Notes、多语言介绍和合规发布材料。它不承诺 Star 数量，也不操纵互动。
 
@@ -14,6 +14,7 @@ GitHub 高星发布优化器只优化真实项目的公开发布层：定位、R
 
 ## 它优化什么
 
+- **命名与搜索：** 评估任务词匹配、当前 GitHub 搜索样本、重名风险、元数据一致性和改名成本。
 - **清晰度：** 明确受众、问题、结果、差异点和主要行动入口。
 - **可信度：** 重要表述必须有仓库证据，并明确限制和真实输出。
 - **展示：** README Hero、Social Preview、Release 发布图、徽章和信息层级。
@@ -32,8 +33,8 @@ GitHub 高星发布优化器只优化真实项目的公开发布层：定位、R
 ## 快速开始
 
 1. 克隆本仓库。
-2. 把内层 [`github-high-star-optimizer`](github-high-star-optimizer) 目录复制到 Codex 环境配置的 Skills 目录。
-3. 指定真实仓库或工作区并调用 Skill。
+2. 按照[安装指南](docs/INSTALLATION.md)，把内层 [`github-high-star-optimizer`](github-high-star-optimizer) 目录安装到 Codex、Claude Code 或兼容 Agent Skills 的宿主。
+3. 使用对应宿主的调用语法，指定真实仓库或工作区。
 
 ```text
 使用 $github-high-star-optimizer 审计这个已有仓库。
