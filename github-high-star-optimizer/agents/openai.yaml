@@ -1,0 +1,4 @@
+interface:
+  display_name: "GitHub 高星发布优化"
+  short_description: "优化现有 GitHub 仓库展示与发布，不修改项目代码"
+  default_prompt: "Use $github-high-star-optimizer to audit this existing repository and prepare a non-code GitHub publishing optimization package."

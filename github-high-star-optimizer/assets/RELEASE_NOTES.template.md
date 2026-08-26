@@ -1,0 +1,58 @@
+# {{PROJECT_NAME}} {{VERSION_OR_MILESTONE}} — {{USER_OUTCOME}}
+
+Canonical language: {{CANONICAL_LANGUAGE}}
+
+{{LOCALIZED_SUMMARY_LINKS_OR_CONCISE_SUMMARIES_IF_MAINTAINED}}
+
+{{ONE_SENTENCE_SUMMARY_OF_WHO_BENEFITS_AND_HOW}}
+
+## Why this release
+
+{{REAL_CONTEXT_OR_USER_PROBLEM}}
+
+## Highlights
+
+### {{OUTCOME_OR_WORKFLOW_1}}
+
+{{WHAT_SHIPPED_AND_VISIBLE_RESULT}}
+
+### {{OUTCOME_OR_WORKFLOW_2}}
+
+{{WHAT_SHIPPED_AND_VISIBLE_RESULT}}
+
+## Upgrade / migration
+
+{{EXACT_EXISTING_VERIFIED_UPGRADE_PATH_OR_NOT_APPLICABLE}}
+
+### Breaking changes
+
+{{BREAKING_CHANGES_OR_NONE}}
+
+## Fixes
+
+- {{VERIFIED_FIX_1}}
+- {{VERIFIED_FIX_2}}
+
+## Current limitations
+
+- {{LIMITATION_1}}
+- {{LIMITATION_2}}
+
+## Install / download
+
+{{VERIFIED_EXISTING_INSTALL_OR_RELEASE_ASSET_LINKS}}
+
+{{CHECKSUM_OR_SIGNATURE_ONLY_IF_ALREADY_PRODUCED}}
+
+## Thanks
+
+{{VERIFIED_CONTRIBUTORS_AND_USER_FEEDBACK_WITH_PERMISSION}}
+
+## Get help
+
+- Documentation: {{DOCS_URL}}
+- Support: {{SUPPORT_URL}}
+- Bug reports: {{ISSUES_URL}}
+- Private security reports: {{REAL_SECURITY_CONTACT_OR_VISIBLE_PLACEHOLDER}}
+
+Feedback is welcome. If the project is useful, you can Star it to save it and help relevant users discover it.

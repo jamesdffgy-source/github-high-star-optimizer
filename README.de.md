@@ -1,0 +1,51 @@
+# GitHub High-Star Optimizer
+
+[English](README.md) · [简体中文](README.zh-CN.md) · [繁體中文](README.zh-TW.md) · [日本語](README.ja.md) · [한국어](README.ko.md) · [Español](README.es.md) · [Português (Brasil)](README.pt-BR.md) · [Français](README.fr.md) · [Deutsch](README.de.md) · [Italiano](README.it.md) · [Русский](README.ru.md) · [العربية](README.ar.md) · [हिन्दी](README.hi.md) · [Türkçe](README.tr.md) · [Bahasa Indonesia](README.id.md)
+
+<p align="center">
+  <img src="docs/assets/github-high-star-optimizer-readme-hero.png" alt="GitHub-High-Star-Optimizer-Ablauf: Audit, Prepare, Apply und Publish, ohne Codeänderungen." />
+</p>
+
+> Ein Codex Skill, der ein reales, bestehendes GitHub-Projekt in ein klareres, glaubwürdiges und veröffentlichungsbereites Repository verwandelt, ohne Produktcode zu ändern.
+
+GitHub High-Star Optimizer verbessert ausschließlich die öffentliche Veröffentlichungsoberfläche: Positionierung, README-Struktur, belegbare Visuals, Repository-Metadaten, Release Notes, lokalisierte Einführungen und ethische Launch-Materialien. Er verspricht keine Stars und manipuliert kein Engagement.
+
+> Die kanonische Quelle ist das [englische README](README.md). Diese Übersetzung wurde noch nicht von einer muttersprachlichen Person geprüft; bei Abweichungen gilt die englische Fassung.
+
+## Was optimiert wird
+
+- **Klarheit:** Zielgruppe, Problem, Ergebnis, Unterscheidungsmerkmal und nächster Schritt.
+- **Vertrauen:** Aussagen mit Repository-Belegen, klare Einschränkungen und echte Ergebnisse.
+- **Präsentation:** README Hero, Social Preview, Release-Grafik, Badges und Informationshierarchie.
+- **Verbreitung:** Metadaten, Release Notes, lokalisierte Texte und eine messbare Launch-Abfolge.
+- **Grenzen:** Kein Ändern von Quellcode, Abhängigkeiten, Build, Tests, CI, Laufzeitkonfiguration oder Produktverhalten.
+
+## Vier Modi
+
+| Modus | Funktion | Änderungen |
+|---|---|---|
+| **Audit** | Bewertet die öffentliche Oberfläche und priorisiert Lücken. | Keine |
+| **Prepare** | Erstellt Texte und Assets in einem separaten Verzeichnis. | Keine |
+| **Apply** | Wendet nur ausdrücklich freigegebene Nicht-Code-Dateien an. | Nur Freigabeliste |
+| **Publish** | Aktualisiert nach Autorisierung Metadaten, Releases oder externe Oberflächen. | Nur autorisierte Aktionen |
+
+## Schnellstart
+
+1. Klonen Sie dieses Repository.
+2. Kopieren Sie das innere Verzeichnis [`github-high-star-optimizer`](github-high-star-optimizer) in das für Codex konfigurierte Skills-Verzeichnis.
+3. Rufen Sie den Skill mit einem realen Repository oder Workspace auf.
+
+```text
+Use $github-high-star-optimizer to audit this existing repository.
+Only optimize its public presentation and release package; do not change code.
+```
+
+## Authentizitätsregeln
+
+Jede wesentliche Aussage muss aus Repository-Dateien, Releases, Demos, Issues, vom Benutzer bereitgestellten Fakten oder klar gekennzeichneten Schlussfolgerungen stammen. Generierte Bilder dürfen keine Oberfläche, Befehlsausgabe, Kennzahl, Integration, Kunden, Funktion oder Star-Zahl erfinden. Kauf oder Tausch von Stars, automatisiertes Engagement und bedingte Belohnungen sind untersagt.
+
+Den vollständigen Ablauf finden Sie in [`github-high-star-optimizer/SKILL.md`](github-high-star-optimizer/SKILL.md), die Regeln zur Mehrsprachigkeit in [`multilingual-publishing.md`](github-high-star-optimizer/references/multilingual-publishing.md).
+
+## Lizenz
+
+[MIT](LICENSE)
