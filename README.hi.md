@@ -18,7 +18,7 @@ GitHub High-Star Optimizer केवल सार्वजनिक प्रस
 - **स्पष्टता:** दर्शक, समस्या, परिणाम, अंतर और अगला कदम।
 - **विश्वास:** रिपॉज़िटरी प्रमाण से जुड़े दावे, स्पष्ट सीमाएँ और वास्तविक परिणाम।
 - **प्रस्तुति:** README Hero, Social Preview, Release चित्र, बैज और सूचना क्रम।
-- **वितरण:** मेटाडेटा, Release Notes, स्थानीयकृत पाठ और मापने योग्य लॉन्च क्रम।
+- **वितरण:** प्लेटफ़ॉर्म-विशिष्ट पाठ, ड्राई-रन, स्वीकृत API/Webhook प्रकाशन, फ़ोरम के लिए सहायक कतार, दोहराव रोकना और परिणाम दर्ज करना।
 - **सीमा:** स्रोत कोड, निर्भरताएँ, बिल्ड, परीक्षण, CI, रनटाइम कॉन्फ़िगरेशन या उत्पाद व्यवहार में कोई बदलाव नहीं।
 
 ## चार मोड
@@ -45,7 +45,7 @@ Only optimize its public presentation and release package; do not change code.
 
 हर महत्वपूर्ण दावे का स्रोत रिपॉज़िटरी फ़ाइल, Release, डेमो, Issue, उपयोगकर्ता द्वारा दिया गया तथ्य या स्पष्ट रूप से चिह्नित अनुमान होना चाहिए। जनरेट की गई छवियाँ उत्पाद UI, कमांड आउटपुट, मीट्रिक, इंटीग्रेशन, ग्राहक, फ़ीचर या Stars नहीं गढ़ सकतीं। Stars खरीदना या बदलना, स्वचालित सहभागिता और शर्त-आधारित पुरस्कार निषिद्ध हैं।
 
-पूरा कार्यप्रवाह [`github-high-star-optimizer/SKILL.md`](github-high-star-optimizer/SKILL.md) में और बहुभाषी नियम [`multilingual-publishing.md`](github-high-star-optimizer/references/multilingual-publishing.md) में हैं।
+पूरा कार्यप्रवाह [`github-high-star-optimizer/SKILL.md`](github-high-star-optimizer/SKILL.md) में, बहुभाषी नियम [`multilingual-publishing.md`](github-high-star-optimizer/references/multilingual-publishing.md) में और बाहरी वितरण स्वचालन [`distribution-automation.md`](github-high-star-optimizer/references/distribution-automation.md) में है।
 
 ## लाइसेंस
 

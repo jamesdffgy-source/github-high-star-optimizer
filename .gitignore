@@ -1,0 +1,7 @@
+# Local launch and distribution packages
+launch-kit/
+distribution-results/
+
+# Python runtime artifacts
+__pycache__/
+*.py[cod]

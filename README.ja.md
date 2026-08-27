@@ -18,7 +18,7 @@ GitHub High-Star Optimizer が改善するのは実在するプロジェクト�
 - **明確さ：** 対象者、課題、結果、差別化要因、次の行動を明示します。
 - **信頼性：** 重要な主張をリポジトリの根拠に結び付け、制限と実際の出力を示します。
 - **見せ方：** README Hero、Social Preview、Release 画像、バッジ、情報設計を整えます。
-- **配布：** GitHub メタデータ、Release Notes、ローカライズ文面、測定可能な公開手順を準備します。
+- **配布：** プラットフォーム別文面、ドライラン、承認済み API／Webhook 配信、フォーラム向け補助キュー、重複防止、結果記録を扱います。
 - **境界：** ソース、依存関係、ビルド、テスト、CI、実行設定、製品の挙動は変更しません。
 
 ## 4 つのモード
@@ -45,7 +45,7 @@ Only optimize its public presentation and release package; do not change code.
 
 重要な主張には、リポジトリのファイル、Release、デモ、Issue、ユーザー提供の事実、または明記された推論が必要です。生成画像で製品 UI、コマンド出力、ベンチマーク、連携、顧客、機能、Star 数を捏造してはいけません。Star の購入、相互交換、自動操作、報酬との交換も禁止します。
 
-完全な手順は [`github-high-star-optimizer/SKILL.md`](github-high-star-optimizer/SKILL.md)、多言語ルールは [`multilingual-publishing.md`](github-high-star-optimizer/references/multilingual-publishing.md) を参照してください。
+完全な手順は [`github-high-star-optimizer/SKILL.md`](github-high-star-optimizer/SKILL.md)、多言語ルールは [`multilingual-publishing.md`](github-high-star-optimizer/references/multilingual-publishing.md)、外部配布の自動化は [`distribution-automation.md`](github-high-star-optimizer/references/distribution-automation.md) を参照してください。
 
 ## ライセンス
 

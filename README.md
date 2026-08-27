@@ -22,7 +22,7 @@ GitHub High-Star Optimizer improves the publishing surface of a real, existing p
 - **Clarity:** audience, problem, outcome, differentiator, and one obvious next action.
 - **Trust:** claims linked to repository evidence, explicit limitations, and real screenshots or output.
 - **Presentation:** README Hero, Social Preview, release artwork, badges, and information hierarchy.
-- **Distribution:** GitHub metadata, release notes, localized launch copy, and a measured relaunch sequence.
+- **Distribution:** platform-native launch copy plus dry-run, approved API/Webhook delivery, assisted forum queues, idempotency, and result capture.
 - **Safety:** no source-code, dependency, build, test, CI, runtime, or product-behavior changes.
 
 ## Four operating modes
@@ -32,7 +32,7 @@ GitHub High-Star Optimizer improves the publishing surface of a real, existing p
 | **Audit** | Scores the existing publishing surface and prioritizes gaps. | None |
 | **Prepare** | Creates a separate launch kit with proposed copy and assets. | None |
 | **Apply** | Applies an explicitly approved allowlist of non-code publishing files. | Approved files only |
-| **Publish** | Updates GitHub metadata, releases, or external launch surfaces after authorization. | Explicitly authorized actions only |
+| **Publish** | Updates GitHub metadata/releases or delivers an approved external campaign through official APIs and authorized webhooks. | Explicitly authorized actions only |
 
 ## Quick start
 
@@ -88,11 +88,40 @@ Sample current GitHub search queries, compare keep/rename candidates, and includ
 rename consequences. Do not rename the live repository.
 ```
 
+Prepare a mostly automated external distribution campaign:
+
+```text
+Use $github-high-star-optimizer in Distribution Prepare mode.
+Create platform-native posts and a dry-run manifest for DEV, Hashnode, Mastodon,
+LinkedIn, and my authorized Discord, Slack, or Telegram destinations. Create an
+assisted queue for rule-sensitive forums. Do not publish until I approve the
+exact campaign ID and enabled destinations; never automate engagement.
+```
+
+The bundled standard-library publisher validates the package without network mutation by default:
+
+```bash
+python github-high-star-optimizer/scripts/distribution_publisher.py \
+  /path/to/campaign/DISTRIBUTION_MANIFEST.json
+```
+
+After explicit campaign approval, live API/Webhook delivery requires both execution flags:
+
+```bash
+python github-high-star-optimizer/scripts/distribution_publisher.py \
+  /path/to/campaign/DISTRIBUTION_MANIFEST.json \
+  --execute --confirm exact-campaign-id
+```
+
+See [external distribution automation](github-high-star-optimizer/references/distribution-automation.md) for supported platforms, credential setup, safety gates, assisted forums, and result handling.
+
 ## Cross-agent compatibility
 
 The canonical package follows the [Agent Skills specification](https://agentskills.io/specification). Codex and Claude Code use the same `SKILL.md`, references, and assets; only discovery paths and explicit invocation syntax differ. `agents/openai.yaml` supplies optional OpenAI UI metadata and is not required by the core workflow.
 
 Compatibility with an Agent Skills format does not imply that every host provides GitHub access, image generation, browser control, or publishing permissions. The Skill falls back to a local audit or launch package when live capabilities are unavailable.
+
+The deterministic distribution publisher requires Python 3.10+ and only uses the standard library. A host without shell access can still generate the manifest and platform copy, but cannot run the bundled publisher directly.
 
 ## Evidence and visual rules
 
@@ -111,14 +140,16 @@ The current locale set and human-review status are recorded in [`docs/LOCALIZATI
 ## Repository structure
 
 - [`github-high-star-optimizer/SKILL.md`](github-high-star-optimizer/SKILL.md) — operating modes, boundaries, workflow, and handoff rules.
-- [`github-high-star-optimizer/references`](github-high-star-optimizer/references) — publishing rubric, repository naming and search, cross-agent compatibility, README and visual guidance, multilingual publishing, releases, evidence, and policy research.
-- [`github-high-star-optimizer/assets`](github-high-star-optimizer/assets) — reusable audit, naming audit, README, release, launch-kit, Social Preview, and image-generation templates.
+- [`github-high-star-optimizer/scripts`](github-high-star-optimizer/scripts) — dependency-free campaign dry-run, approved API/Webhook delivery, idempotency, and result capture.
+- [`github-high-star-optimizer/references`](github-high-star-optimizer/references) — publishing rubric, naming/search, cross-agent compatibility, distribution automation, visuals, multilingual publishing, releases, evidence, and policy research.
+- [`github-high-star-optimizer/assets`](github-high-star-optimizer/assets) — reusable audit, naming, distribution manifest, README, release, launch-kit, Social Preview, and image-generation templates.
+- [`github-high-star-optimizer/tests`](github-high-star-optimizer/tests) — local behavior tests using only simulated HTTP endpoints.
 - [`docs/INSTALLATION.md`](docs/INSTALLATION.md) — Codex, Claude Code, and portable Agent Skills installation and verification.
 - [`docs/assets`](docs/assets) — final README, Social Preview, and release artwork.
 
 ## Non-goals
 
-This Skill does not modify application code, dependencies, builds, tests, CI, runtime configuration, APIs, storage, telemetry, permissions, or security controls. It also rejects paid Stars, star-for-star rings, automated engagement, reward-gated Stars, fake users, fake testimonials, and guaranteed-ranking claims.
+This Skill does not modify target-project code, dependencies, builds, tests, CI, runtime configuration, APIs, storage, telemetry, permissions, or security controls. Delivery automation is limited to explicitly approved content and destinations; paid Stars, star-for-star rings, automated engagement, reward-gated Stars, fake users, fake testimonials, and guaranteed-ranking claims remain prohibited.
 
 ## License
 

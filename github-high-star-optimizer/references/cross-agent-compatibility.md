@@ -13,7 +13,8 @@ github-high-star-optimizer/
 ├── SKILL.md
 ├── agents/
 ├── assets/
-└── references/
+├── references/
+└── scripts/
 ```
 
 The portable contract is the [Agent Skills specification](https://agentskills.io/specification): a directory containing `SKILL.md` with `name` and `description`, plus optional scripts, references, and assets. Use relative links from `SKILL.md` and keep host-specific metadata optional.
@@ -24,7 +25,7 @@ Do not copy the same Skill into multiple platform folders inside the source repo
 
 | Host | Status | Personal location | Project location | Explicit invocation |
 |---|---|---|---|---|
-| Codex | Core structure locally validated | `$HOME/.agents/skills/<skill-name>` | `$REPO_ROOT/.agents/skills/<skill-name>` | Type `$skill-name`; `/skills` lists skills in CLI/IDE |
+| Codex | Core structure and distribution publisher locally validated | `$HOME/.agents/skills/<skill-name>` | `$REPO_ROOT/.agents/skills/<skill-name>` | Type `$skill-name`; `/skills` lists skills in CLI/IDE |
 | Claude Code | Official structure documented; runtime test pending | `~/.claude/skills/<skill-name>` | `.claude/skills/<skill-name>` | `/skill-name` |
 | Other Agent Skills hosts | Format-compatible by design | Host-specific | Host-specific | Host-specific |
 
@@ -41,6 +42,7 @@ OpenAI’s [Build skills documentation](https://developers.openai.com/codex/skil
 - Describe required capabilities, not a fixed tool name. For example, require “current GitHub search access” rather than assuming one browser or CLI.
 - Preserve the same authorization boundary on every host. Host portability never grants permission to rename, push, release, post, or change live settings.
 - When a host lacks image generation, GitHub access, browser control, or shell access, produce a brief or copy-ready payload instead of pretending the mutation occurred.
+- The optional distribution publisher requires Python 3.10+ and shell access. Hosts without that runtime can still prepare the portable manifest, content files, and assisted queue instructions; do not label API delivery as tested there.
 
 ## Installation documentation requirements
 

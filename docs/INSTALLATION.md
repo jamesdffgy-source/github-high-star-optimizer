@@ -95,6 +95,33 @@ First state the operating mode and the evidence sources you will inspect.
 
 A correct activation should identify **Audit** mode and retain the no-code-change and no-unapproved-publishing boundaries.
 
+## External distribution automation
+
+The optional deterministic publisher requires Python 3.10+ and has no third-party package dependencies. Verify it after installation:
+
+```bash
+python github-high-star-optimizer/scripts/distribution_publisher.py --version
+```
+
+Create a campaign with the Skill, then dry-run it before adding any live authorization:
+
+```bash
+python github-high-star-optimizer/scripts/distribution_publisher.py \
+  /path/to/campaign/DISTRIBUTION_MANIFEST.json
+```
+
+Credentials must be supplied through the environment-variable names recorded in the manifest. Never paste tokens, cookies, passwords, or webhook URLs into the manifest or repository. For example, set `DEVTO_API_KEY`, `HASHNODE_PAT`, or an authorized webhook variable only in the shell or secret manager used for the live run.
+
+Live API/Webhook publishing requires an exact campaign confirmation:
+
+```bash
+python github-high-star-optimizer/scripts/distribution_publisher.py \
+  /path/to/campaign/DISTRIBUTION_MANIFEST.json \
+  --execute --confirm exact-campaign-id
+```
+
+See [`references/distribution-automation.md`](../github-high-star-optimizer/references/distribution-automation.md) for the platform matrix and authorization boundaries. Codex, Claude Code, and other hosts can prepare the same package; running the publisher additionally requires shell access and Python 3.10+ in that host environment.
+
 ## Existing installation warning
 
 If a same-name Skill directory already exists, compare it before copying. Do not silently overwrite local customizations.

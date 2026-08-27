@@ -18,7 +18,7 @@ GitHub 高星发布优化器只优化真实项目的公开发布层：定位、R
 - **清晰度：** 明确受众、问题、结果、差异点和主要行动入口。
 - **可信度：** 重要表述必须有仓库证据，并明确限制和真实输出。
 - **展示：** README Hero、Social Preview、Release 发布图、徽章和信息层级。
-- **传播：** GitHub 元数据、Release Notes、本地化文案和可复盘的发布节奏。
+- **外部分发：** 生成平台专属文案，支持干跑、经批准的 API/Webhook 自动发布、论坛辅助队列、幂等防重复和结果回收。
 - **边界：** 不修改源码、依赖、构建、测试、CI、运行配置或产品行为。
 
 ## 四种模式
@@ -45,7 +45,7 @@ GitHub 高星发布优化器只优化真实项目的公开发布层：定位、R
 
 所有重要表述必须来自仓库文件、Release、演示、Issue、用户提供的事实或清楚标注的推断。生成式图片不得伪造产品界面、命令输出、性能数据、集成、客户、功能或 Star 数量。禁止买星、互刷、自动化互动和奖励换 Star。
 
-完整工作流见 [`github-high-star-optimizer/SKILL.md`](github-high-star-optimizer/SKILL.md)，多语言规范见 [`multilingual-publishing.md`](github-high-star-optimizer/references/multilingual-publishing.md)。
+完整工作流见 [`github-high-star-optimizer/SKILL.md`](github-high-star-optimizer/SKILL.md)，多语言规范见 [`multilingual-publishing.md`](github-high-star-optimizer/references/multilingual-publishing.md)，外部分发自动化见 [`distribution-automation.md`](github-high-star-optimizer/references/distribution-automation.md)。
 
 ## 许可证
 

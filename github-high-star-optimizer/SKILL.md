@@ -1,6 +1,6 @@
 ---
 name: github-high-star-optimizer
-description: Audit and optimize an existing GitHub repository's publishing surface for organic discovery—naming and search positioning, README, evidence-safe visuals, metadata, releases, localization, and launch copy—without changing code or manipulating Stars. Use when reviewing or preparing a repository for launch or relaunch, evaluating its name, generating honest GitHub visuals, or publishing explicitly approved presentation changes.
+description: Audit and optimize an existing GitHub repository's publishing surface for organic discovery—naming, README, evidence-safe visuals, metadata, releases, localization, launch copy, and approved external distribution—without changing project code or manipulating engagement. Use when reviewing, preparing, relaunching, or ethically distributing a real repository.
 license: MIT
 ---
 
@@ -25,7 +25,7 @@ The allowed publishing surface, subject to the user's authorization, is:
 - localized README introductions, language navigation, and multilingual release/launch copy that preserve the canonical claims;
 - release title/notes, changelog prose, migration announcement, and launch calendar;
 - `CONTRIBUTING`, `SUPPORT`, `SECURITY`, `CODE_OF_CONDUCT`, Issue/PR templates, governance/roadmap copy, only when requested and treated as real policy commitments;
-- channel-native announcement drafts and ethical outreach plans.
+- channel-native announcement drafts, ethical outreach plans, and explicitly approved delivery through official APIs or authorized webhooks.
 
 Do not select or replace a software license, invent a security contact, add a funding destination, or make a governance promise without explicit user input. Draft these items with clearly marked placeholders.
 
@@ -38,6 +38,7 @@ Do not select or replace a software license, invent a security contact, add a fu
 - Star count is an attention signal, not proof of adoption or quality. Pair it with honest usage and community metrics.
 - Do not promise a Star count, GitHub Trending placement, Product Hunt rank, or launch outcome.
 - Do not post, send messages, change live repository settings, publish a release, or edit the target repository unless the user authorized that mutation. Preparing local drafts is not authorization to publish them.
+- Automating content delivery never authorizes automated Stars, votes, follows, reviews, comments, account creation, CAPTCHA bypass, or repeated posting that evades platform/community limits.
 
 ## Host portability
 
@@ -52,7 +53,7 @@ Infer the narrowest mode that satisfies the request:
 1. **Audit** — read-only. Score the current publishing surface, identify evidence-backed gaps, and propose priorities. Use this for “review,” “analyze,” or “how can this repo get more Stars?”
 2. **Prepare** — create a separate local launch kit containing proposed copy and assets; leave the target repository untouched. Use when the user wants drafts, options, or a plan.
 3. **Apply** — edit only the explicitly approved non-code publishing files in the target repository. Before editing, list the allowed files; after editing, verify the diff contains no out-of-scope files.
-4. **Publish** — mutate GitHub metadata, create/publish a release, or post externally only when the user explicitly requests that action and the required tool/account is available. Show the final payload and obtain any approval required by the environment immediately before the mutation.
+4. **Publish** — mutate GitHub metadata, create/publish a release, or deliver an approved external campaign only when the user explicitly requests that action and the required tool/account is available. Show the final payload, campaign ID, and destinations, then obtain any approval required by the environment immediately before the mutation.
 
 When the request is ambiguous, default to **Prepare**, not Apply or Publish.
 
@@ -115,6 +116,7 @@ Read only the references relevant to the requested outputs:
 - For localized README introductions, language navigation, multilingual release notes, or broad language coverage, read [references/multilingual-publishing.md](references/multilingual-publishing.md) completely.
 - For Codex, Claude Code, Agent Skills portability, or installation instructions, read [references/cross-agent-compatibility.md](references/cross-agent-compatibility.md) completely.
 - For platform rules, research claims, fake-Star boundaries, and source quality, read [references/evidence-and-policies.md](references/evidence-and-policies.md).
+- For external promotion, API/Webhook delivery, assisted forum posting, campaign manifests, or distribution results, read [references/distribution-automation.md](references/distribution-automation.md) completely.
 
 Use the matching files in `assets/` as output scaffolds; replace every placeholder or leave it visibly marked for user completion. Do not copy an asset into the target repository if the user requested only an audit or preview.
 
@@ -129,6 +131,7 @@ A full Prepare result normally contains:
 - release title and release notes draft;
 - a canonical-language manifest and localized introductions when multilingual publishing is requested;
 - channel-native launch drafts for only the audiences that match the project;
+- an automation manifest, credential-name preflight, local assisted queue, and delivery ledger when external distribution is requested;
 - 14-day relaunch calendar and measurement baseline;
 - claim/evidence ledger and a list of decisions requiring the user.
 
@@ -164,6 +167,22 @@ When multilingual publishing is requested:
 
 Treat localization as a maintained publishing surface. If parity cannot be maintained, label the localized file with its review date and link to the canonical source.
 
+### 4c. Automate external distribution with a campaign boundary
+
+When external promotion or cross-posting is requested, read [references/distribution-automation.md](references/distribution-automation.md) completely and use [assets/DISTRIBUTION_MANIFEST.template.json](assets/DISTRIBUTION_MANIFEST.template.json).
+
+- create the campaign, platform-native copy, and manifest in a separate launch package;
+- store only credential environment-variable names in the manifest—never tokens, cookies, passwords, or webhook URLs;
+- use [`scripts/distribution_publisher.py`](scripts/distribution_publisher.py) for deterministic preflight, authorized API/Webhook delivery, idempotency, bounded retries, and result capture;
+- run dry-run first and show the campaign ID, enabled destinations, account/channel/community, language, content path, required environment names, and readiness;
+- execute only after the user authorizes that exact campaign and destination set; live execution requires both `--execute` and `--confirm <campaign-id>`;
+- use API delivery for DEV/Forem, Hashnode, Mastodon, LinkedIn, and authorized Discord, Slack, Telegram, or generic webhooks when current permissions and official endpoints are verified;
+- keep Product Hunt, Hacker News, Reddit communities, V2EX, Juejin, Zhihu, and other rule-sensitive forums assisted unless a current official publishing interface and community authorization make automation appropriate;
+- when browser control is available, prefill assisted titles, bodies, tags, and approved images after checking the visible account and current rules; stop at the final submit control unless the user explicitly authorized that exact draft and destination;
+- after execution, report every success URL/ID, duplicate skip, failure, and remaining assisted target. Never infer campaign success from request delivery alone.
+
+Do not execute a manifest containing unresolved placeholders, unsupported claims, missing credentials, uncertain community permission, secrets in files, or a changed successful target without deliberate republish authorization.
+
 ### 5. Apply with a non-code file allowlist
 
 Before Apply mode, state the exact files that may change. During the edit:
@@ -196,6 +215,7 @@ Verify, as applicable:
 - release copy separates shipped features from roadmap items;
 - community and security contact placeholders are not presented as live policy;
 - channel drafts obey current platform/community rules;
+- distribution dry-run performs no network mutation, live targets use HTTPS, result/state files contain no credentials, and successful payloads are idempotently skipped;
 - no out-of-scope file changed and no external action occurred without authorization.
 
 ## Handoff
@@ -209,5 +229,6 @@ Lead with the resulting publishing improvement, not the process. Report:
 - canonical language, published locales, and human-review status for multilingual output;
 - tested hosts, documented hosts, and unverified compatibility claims;
 - actions the user must perform in GitHub Settings or external platforms;
+- distribution campaign ID, published URLs/IDs, failures, duplicate skips, and assisted targets still awaiting submission;
 - the next measurement checkpoint;
 - an explicit confirmation that source code and runtime behavior were not changed.

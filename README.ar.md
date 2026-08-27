@@ -18,7 +18,7 @@
 - **الوضوح:** الجمهور والمشكلة والنتيجة والفرق والخطوة التالية.
 - **الثقة:** ربط الادعاءات بأدلة المستودع، وذكر القيود والنتائج الحقيقية.
 - **العرض:** README Hero وSocial Preview وصورة Release والشارات وترتيب المعلومات.
-- **التوزيع:** البيانات الوصفية وRelease Notes والنصوص المترجمة وتسلسل إطلاق قابل للقياس.
+- **التوزيع:** نصوص مخصصة لكل منصة، وتجربة جافة، ونشر API/Webhook بعد الموافقة، وطابور مساعد للمنتديات، ومنع التكرار وتسجيل النتائج.
 - **الحدود:** لا تغيير للشيفرة المصدرية أو التبعيات أو البناء أو الاختبارات أو CI أو إعدادات التشغيل أو سلوك المنتج.
 
 ## أربعة أوضاع
@@ -45,7 +45,7 @@ Only optimize its public presentation and release package; do not change code.
 
 يجب أن يستند كل ادعاء مهم إلى ملفات المستودع أو Releases أو العروض أو Issues أو حقائق يقدمها المستخدم أو استنتاج معلّم بوضوح. لا يجوز للصور المولدة اختلاق واجهة منتج أو مخرجات أو مقاييس أو تكاملات أو عملاء أو ميزات أو عدد Stars. ويُحظر شراء Stars أو تبادلها أو التفاعل الآلي أو المكافآت المشروطة.
 
-راجع سير العمل الكامل في [`github-high-star-optimizer/SKILL.md`](github-high-star-optimizer/SKILL.md) وقواعد تعدد اللغات في [`multilingual-publishing.md`](github-high-star-optimizer/references/multilingual-publishing.md).
+راجع سير العمل الكامل في [`github-high-star-optimizer/SKILL.md`](github-high-star-optimizer/SKILL.md)، وقواعد تعدد اللغات في [`multilingual-publishing.md`](github-high-star-optimizer/references/multilingual-publishing.md)، وأتمتة التوزيع الخارجي في [`distribution-automation.md`](github-high-star-optimizer/references/distribution-automation.md).
 
 ## الترخيص
 

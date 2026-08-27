@@ -18,7 +18,7 @@ GitHub 高星發布優化器只改善真實專案的公開發布層：定位、R
 - **清楚：** 說明受眾、問題、結果、差異點與主要下一步。
 - **可信：** 重要敘述連結到儲存庫證據，並揭示限制與真實輸出。
 - **展示：** README Hero、Social Preview、Release 圖片、徽章與資訊層級。
-- **傳播：** GitHub 中繼資料、Release Notes、本地化文案與可衡量的發布節奏。
+- **外部分發：** 建立平台專屬文案，支援試跑、經核准的 API/Webhook 自動發布、論壇輔助佇列、冪等防重複與結果回收。
 - **邊界：** 不修改原始碼、相依套件、建置、測試、CI、執行設定或產品行為。
 
 ## 四種模式
@@ -45,7 +45,7 @@ GitHub 高星發布優化器只改善真實專案的公開發布層：定位、R
 
 重要敘述必須來自儲存庫檔案、Release、示範、Issue、使用者提供的事實，或清楚標示的推論。生成圖片不得偽造產品介面、命令輸出、效能資料、整合、客戶、功能或 Star 數量。禁止買星、互刷、自動互動與以獎勵換取 Star。
 
-完整流程請見 [`github-high-star-optimizer/SKILL.md`](github-high-star-optimizer/SKILL.md)，多語言規範請見 [`multilingual-publishing.md`](github-high-star-optimizer/references/multilingual-publishing.md)。
+完整流程請見 [`github-high-star-optimizer/SKILL.md`](github-high-star-optimizer/SKILL.md)，多語言規範請見 [`multilingual-publishing.md`](github-high-star-optimizer/references/multilingual-publishing.md)，外部分發自動化請見 [`distribution-automation.md`](github-high-star-optimizer/references/distribution-automation.md)。
 
 ## 授權
 

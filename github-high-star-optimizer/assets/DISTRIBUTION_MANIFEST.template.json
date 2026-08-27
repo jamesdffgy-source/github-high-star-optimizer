@@ -1,0 +1,114 @@
+{
+  "schema_version": 1,
+  "campaign_id": "replace-with-a-lowercase-campaign-id",
+  "canonical_url": "https://github.com/owner/repository",
+  "targets": [
+    {
+      "id": "dev-community-en",
+      "platform": "devto",
+      "enabled": false,
+      "api_key_env": "DEVTO_API_KEY",
+      "title": "Replace with an evidence-backed title",
+      "content_file": "platforms/devto/article.md",
+      "tags": ["opensource", "github", "productivity"],
+      "ai_disclosure_level": "some_ai",
+      "publish": true
+    },
+    {
+      "id": "hashnode-en",
+      "platform": "hashnode",
+      "enabled": false,
+      "token_env": "HASHNODE_PAT",
+      "publication_id": "replace-with-publication-id",
+      "title": "Replace with an evidence-backed title",
+      "content_file": "platforms/hashnode/article.md",
+      "tags": ["opensource", "github"]
+    },
+    {
+      "id": "mastodon-primary",
+      "platform": "mastodon",
+      "enabled": false,
+      "access_token_env": "MASTODON_ACCESS_TOKEN",
+      "instance_url": "https://mastodon.social",
+      "content_file": "platforms/mastodon/post.txt",
+      "visibility": "public",
+      "language": "en"
+    },
+    {
+      "id": "linkedin-personal",
+      "platform": "linkedin",
+      "enabled": false,
+      "access_token_env": "LINKEDIN_ACCESS_TOKEN",
+      "api_version_env": "LINKEDIN_API_VERSION",
+      "author": "urn:li:person:replace-with-member-id",
+      "content_file": "platforms/linkedin/post.txt",
+      "visibility": "PUBLIC"
+    },
+    {
+      "id": "discord-owned-channel",
+      "platform": "discord",
+      "enabled": false,
+      "webhook_env": "DISCORD_LAUNCH_WEBHOOK",
+      "content_file": "platforms/discord/post.txt"
+    },
+    {
+      "id": "slack-owned-channel",
+      "platform": "slack",
+      "enabled": false,
+      "webhook_env": "SLACK_LAUNCH_WEBHOOK",
+      "content_file": "platforms/slack/post.txt"
+    },
+    {
+      "id": "telegram-owned-channel",
+      "platform": "telegram",
+      "enabled": false,
+      "bot_token_env": "TELEGRAM_BOT_TOKEN",
+      "chat_id": "@replace_with_owned_channel",
+      "content_file": "platforms/telegram/post.txt",
+      "disable_notification": false
+    },
+    {
+      "id": "approved-generic-webhook",
+      "platform": "generic_webhook",
+      "enabled": false,
+      "endpoint_env": "APPROVED_LAUNCH_WEBHOOK",
+      "content_field": "text",
+      "content_file": "platforms/webhook/post.txt",
+      "static_payload": {
+        "campaign": "replace-with-campaign-label"
+      }
+    },
+    {
+      "id": "product-hunt",
+      "platform": "assisted",
+      "enabled": true,
+      "publish_url": "https://www.producthunt.com/posts/new",
+      "title": "Product Hunt launch",
+      "content_file": "platforms/product-hunt/listing.md"
+    },
+    {
+      "id": "hacker-news-show",
+      "platform": "assisted",
+      "enabled": true,
+      "publish_url": "https://news.ycombinator.com/submit",
+      "title": "Show HN submission",
+      "content_file": "platforms/hacker-news/show-hn.md"
+    },
+    {
+      "id": "reddit-approved-community",
+      "platform": "assisted",
+      "enabled": false,
+      "publish_url": "https://www.reddit.com/submit",
+      "title": "Reddit community post after rule review",
+      "content_file": "platforms/reddit/post.md"
+    },
+    {
+      "id": "v2ex-create-topic",
+      "platform": "assisted",
+      "enabled": false,
+      "publish_url": "https://www.v2ex.com/new",
+      "title": "V2EX topic after node-rule review",
+      "content_file": "platforms/v2ex/post.md"
+    }
+  ]
+}

@@ -5,6 +5,7 @@
 - Published locale set: 15 languages
 - Last synchronized: 2026-08-27
 - Review status: generated translations; not yet reviewed by fluent human reviewers
+- Synchronized capability: approved external API/Webhook delivery and assisted forum queues
 
 ## Published locales
 

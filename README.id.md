@@ -18,7 +18,7 @@ GitHub High-Star Optimizer hanya memperbaiki lapisan presentasi dan publikasi: p
 - **Kejelasan:** audiens, masalah, hasil, pembeda, dan tindakan berikutnya.
 - **Kepercayaan:** klaim yang terhubung ke bukti repositori, batasan jelas, dan hasil nyata.
 - **Presentasi:** README Hero, Social Preview, gambar Release, badge, dan hierarki informasi.
-- **Distribusi:** metadata, Release Notes, teks terlokalisasi, dan urutan peluncuran yang dapat diukur.
+- **Distribusi:** teks khusus platform, dry-run, pengiriman API/Webhook yang disetujui, antrean forum terbantu, idempotensi, dan pencatatan hasil.
 - **Batas:** tidak mengubah kode sumber, dependensi, build, pengujian, CI, konfigurasi runtime, atau perilaku produk.
 
 ## Empat mode
@@ -45,7 +45,7 @@ Only optimize its public presentation and release package; do not change code.
 
 Setiap klaim penting harus berasal dari file repositori, Releases, demo, Issues, fakta dari pengguna, atau inferensi yang ditandai jelas. Gambar generatif tidak boleh mengarang antarmuka, keluaran perintah, metrik, integrasi, pelanggan, fitur, atau jumlah Stars. Pembelian atau pertukaran Stars, keterlibatan otomatis, dan hadiah bersyarat dilarang.
 
-Lihat alur lengkap di [`github-high-star-optimizer/SKILL.md`](github-high-star-optimizer/SKILL.md) dan aturan multibahasa di [`multilingual-publishing.md`](github-high-star-optimizer/references/multilingual-publishing.md).
+Lihat alur lengkap di [`github-high-star-optimizer/SKILL.md`](github-high-star-optimizer/SKILL.md), aturan multibahasa di [`multilingual-publishing.md`](github-high-star-optimizer/references/multilingual-publishing.md), dan otomatisasi eksternal di [`distribution-automation.md`](github-high-star-optimizer/references/distribution-automation.md).
 
 ## Lisensi
 

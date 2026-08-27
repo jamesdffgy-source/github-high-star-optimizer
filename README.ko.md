@@ -18,7 +18,7 @@ GitHub High-Star Optimizer는 실제 프로젝트의 공개·배포 영역만 �
 - **명확성:** 대상 사용자, 문제, 결과, 차별점과 다음 행동을 분명히 합니다.
 - **신뢰:** 주요 주장에 저장소 근거를 연결하고 제한과 실제 결과를 공개합니다.
 - **표현:** README Hero, Social Preview, Release 이미지, 배지와 정보 구조를 정리합니다.
-- **배포:** GitHub 메타데이터, Release Notes, 현지화 문구와 측정 가능한 출시 순서를 준비합니다.
+- **배포:** 플랫폼별 문구, 드라이런, 승인된 API/Webhook 전송, 포럼 보조 큐, 중복 방지와 결과 기록을 제공합니다.
 - **경계:** 소스, 의존성, 빌드, 테스트, CI, 런타임 설정 또는 제품 동작은 변경하지 않습니다.
 
 ## 네 가지 모드
@@ -45,7 +45,7 @@ Only optimize its public presentation and release package; do not change code.
 
 중요한 주장은 저장소 파일, Release, 데모, Issue, 사용자가 제공한 사실 또는 명확히 표시된 추론에 근거해야 합니다. 생성 이미지로 제품 UI, 명령 출력, 벤치마크, 통합, 고객, 기능 또는 Star 수를 꾸며내면 안 됩니다. Star 구매, 맞교환, 자동 참여, 보상 조건도 금지합니다.
 
-전체 절차는 [`github-high-star-optimizer/SKILL.md`](github-high-star-optimizer/SKILL.md), 다국어 규칙은 [`multilingual-publishing.md`](github-high-star-optimizer/references/multilingual-publishing.md)를 참조하세요.
+전체 절차는 [`github-high-star-optimizer/SKILL.md`](github-high-star-optimizer/SKILL.md), 다국어 규칙은 [`multilingual-publishing.md`](github-high-star-optimizer/references/multilingual-publishing.md), 외부 배포 자동화는 [`distribution-automation.md`](github-high-star-optimizer/references/distribution-automation.md)를 참조하세요.
 
 ## 라이선스
 

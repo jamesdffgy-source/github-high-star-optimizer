@@ -18,7 +18,7 @@ GitHub High-Star Optimizer mejora únicamente la capa pública y de lanzamiento:
 - **Claridad:** público, problema, resultado, diferenciador y siguiente acción.
 - **Confianza:** afirmaciones respaldadas por el repositorio, limitaciones explícitas y resultados reales.
 - **Presentación:** README Hero, Social Preview, imagen de Release, insignias y jerarquía.
-- **Distribución:** metadatos, Release Notes, textos localizados y una secuencia medible de lanzamiento.
+- **Distribución:** textos propios de cada plataforma, simulación, entrega por API/Webhook aprobada, cola asistida para foros, idempotencia y registro de resultados.
 - **Límites:** no cambia código fuente, dependencias, compilación, pruebas, CI, configuración de ejecución ni comportamiento.
 
 ## Cuatro modos
@@ -45,7 +45,7 @@ Only optimize its public presentation and release package; do not change code.
 
 Cada afirmación importante debe proceder de archivos, Releases, demostraciones, Issues, hechos aportados por el usuario o inferencias claramente etiquetadas. Las imágenes generadas no pueden inventar interfaces, salidas de comandos, métricas, integraciones, clientes, funciones ni Stars. Se prohíben la compra o intercambio de Stars, la interacción automatizada y las recompensas condicionadas.
 
-Consulta el flujo completo en [`github-high-star-optimizer/SKILL.md`](github-high-star-optimizer/SKILL.md) y las reglas multilingües en [`multilingual-publishing.md`](github-high-star-optimizer/references/multilingual-publishing.md).
+Consulta el flujo completo en [`github-high-star-optimizer/SKILL.md`](github-high-star-optimizer/SKILL.md), las reglas multilingües en [`multilingual-publishing.md`](github-high-star-optimizer/references/multilingual-publishing.md) y la automatización externa en [`distribution-automation.md`](github-high-star-optimizer/references/distribution-automation.md).
 
 ## Licencia
 

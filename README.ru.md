@@ -18,7 +18,7 @@ GitHub High-Star Optimizer улучшает только публичный сл
 - **Ясность:** аудитория, проблема, результат, отличие и следующий шаг.
 - **Доверие:** утверждения с доказательствами из репозитория, явные ограничения и реальные результаты.
 - **Представление:** README Hero, Social Preview, изображение Release, бейджи и иерархия.
-- **Распространение:** метаданные, Release Notes, локализованные тексты и измеримая последовательность запуска.
+- **Распространение:** тексты под каждую платформу, сухой запуск, одобренная отправка через API/Webhook, вспомогательная очередь форумов, идемпотентность и журнал результатов.
 - **Границы:** без изменений исходного кода, зависимостей, сборки, тестов, CI, конфигурации выполнения и поведения продукта.
 
 ## Четыре режима
@@ -45,7 +45,7 @@ Only optimize its public presentation and release package; do not change code.
 
 Каждое существенное утверждение должно опираться на файлы, Releases, демонстрации, Issues, факты пользователя или явно отмеченный вывод. Сгенерированные изображения не должны выдумывать интерфейс, вывод команд, метрики, интеграции, клиентов, функции или количество Stars. Покупка и обмен Stars, автоматическая активность и условные награды запрещены.
 
-Полный процесс описан в [`github-high-star-optimizer/SKILL.md`](github-high-star-optimizer/SKILL.md), правила локализации — в [`multilingual-publishing.md`](github-high-star-optimizer/references/multilingual-publishing.md).
+Полный процесс описан в [`github-high-star-optimizer/SKILL.md`](github-high-star-optimizer/SKILL.md), правила локализации — в [`multilingual-publishing.md`](github-high-star-optimizer/references/multilingual-publishing.md), автоматизация внешнего распространения — в [`distribution-automation.md`](github-high-star-optimizer/references/distribution-automation.md).
 
 ## Лицензия
 

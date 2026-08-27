@@ -1,4 +1,4 @@
 interface:
   display_name: "GitHub 高星发布优化"
-  short_description: "审计仓库命名、展示与发布，不修改项目代码"
-  default_prompt: "Use $github-high-star-optimizer to audit this repository's name, search discoverability, public presentation, and release package without changing project code."
+  short_description: "优化仓库展示，并自动分发已批准的发布活动"
+  default_prompt: "Use $github-high-star-optimizer to prepare and dry-run an evidence-backed GitHub launch and external distribution campaign without changing project code."

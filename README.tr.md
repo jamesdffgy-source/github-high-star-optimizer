@@ -18,7 +18,7 @@ GitHub High-Star Optimizer yalnızca herkese açık sunum ve yayın katmanını 
 - **Açıklık:** hedef kitle, sorun, sonuç, fark ve sonraki eylem.
 - **Güven:** depo kanıtlarına bağlı iddialar, açık sınırlamalar ve gerçek sonuçlar.
 - **Sunum:** README Hero, Social Preview, Release görseli, rozetler ve bilgi hiyerarşisi.
-- **Dağıtım:** meta veriler, Release Notes, yerelleştirilmiş metinler ve ölçülebilir yayın sırası.
+- **Dağıtım:** platforma özel metinler, dry-run, onaylı API/Webhook gönderimi, forumlar için destekli kuyruk, yinelenmeme ve sonuç kaydı.
 - **Sınırlar:** kaynak kod, bağımlılıklar, derleme, testler, CI, çalışma zamanı yapılandırması veya ürün davranışı değiştirilmez.
 
 ## Dört mod
@@ -45,7 +45,7 @@ Only optimize its public presentation and release package; do not change code.
 
 Her önemli iddia depo dosyalarına, Releases, demolara, Issues, kullanıcı tarafından sağlanan gerçeklere veya açıkça işaretlenmiş çıkarımlara dayanmalıdır. Üretilen görseller ürün arayüzü, komut çıktısı, ölçüm, entegrasyon, müşteri, özellik veya Star sayısı uyduramaz. Star satın alma ya da takası, otomatik etkileşim ve koşullu ödüller yasaktır.
 
-Tam iş akışı [`github-high-star-optimizer/SKILL.md`](github-high-star-optimizer/SKILL.md), çok dilli kurallar [`multilingual-publishing.md`](github-high-star-optimizer/references/multilingual-publishing.md) içindedir.
+Tam iş akışı [`github-high-star-optimizer/SKILL.md`](github-high-star-optimizer/SKILL.md), çok dilli kurallar [`multilingual-publishing.md`](github-high-star-optimizer/references/multilingual-publishing.md), dış dağıtım otomasyonu [`distribution-automation.md`](github-high-star-optimizer/references/distribution-automation.md) içindedir.
 
 ## Lisans
 
